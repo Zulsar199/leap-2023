@@ -1,0 +1,107 @@
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    /* transition: all; */
+    transition-property: background-color;
+    transition-duration: 3s;
+    transition-timing-function: cubic-bezier(1, 0, 0, 1);
+    transition-delay: 200ms;
+    /* transition: all 2s ease-in-out 1s;  */
+    cursor: pointer;
+
+  
+}
+
+
+.box:hover{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+
+.hover{
+    width: 100px;
+    height: 30px;
+    background-color: green;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+    transition: background-color 1s linear .5s
+
+}
+
+.hover:hover{
+    background-color: aquamarine;
+}
+
+.bigbox{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border: 1px ;
+    border-style: dashed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.smallbox{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    transition: all 2s linear ;
+}
+
+.smallbox:hover{
+    width: 200px;
+    height: 200px;
+}
+
+.change-shape{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    
+    transition: transform 1s linear;
+    transition: border 1s linear;
+    transition: border-radius 2s linear;
+    transition: background-color 3s linear;
+
+}
+
+
+.change-shape{
+    transition: all 1s linear;
+}
+.change-shape:hover{
+    border-radius: 50%;
+    background-color: blue;
+    border: 10px solid black;
+    transform: rotate(360deg)
+}
+
+.container{
+    width: 100px;
+    height: 20px;
+    border: 1px solid black;
+    overflow: hidden;
+    overflow: scroll;
+}
+
+.child{
+    overflow: scroll;
+}
